@@ -9,7 +9,7 @@ app.set('view engine', '.hbs');
 
 const E_UNABLE_TO_PARSE = 'Bad Request: unable to parse result.';
 
-const clientId = process.env['CLIENT_ID'] || '1882c029-4707-4aee-8a95-bfa547a64563';
+const clientId = process.env['CLIENT_ID'] || '9332cac0-01dc-46f7-a945-6a690f7581b1';
 const clientSecret = process.env['CLIENT_SECRET'] || process.env.clientSecret;
 const port = process.env['SERVER_PORT'] || process.env.port;
 let host = process.env['WEBSITE_HOSTNAME'] || process.env.host;
