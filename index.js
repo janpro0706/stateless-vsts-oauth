@@ -61,7 +61,7 @@ const processQuery = (req, res, next) => {
 
 const handleVstsOauth = (req, res, next) => {
     request.post({
-        url: 'https://app.vssps.visualstudio.com/oauth2/token',
+        url: 'https://login.microsoftonline.com/common/oauth2/v2.0/token',
         body: getProperty(FORM_DATA),
         headers: {
             'Content-Type': 'application/x-www-form-urlencoded'
