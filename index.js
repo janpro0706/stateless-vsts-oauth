@@ -120,6 +120,16 @@ app.get('/', (req, res) => {
     });
 });
 
+app.get("/.well-known/", (req, res) => {
+    res.json({
+        associatedApplications: [
+            {
+                applicationId: "103899d3-f4fd-4197-96f3-8e277332a39e",
+            },
+        ],
+    });
+});
+
 app.listen(port, () => {
     console.log(`app listening on port ${port}!`)
 });
