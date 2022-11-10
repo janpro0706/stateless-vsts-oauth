@@ -120,7 +120,7 @@ app.get('/', (req, res) => {
     });
 });
 
-app.get("/.well-known/", (req, res) => {
+app.get("/.well-known/microsoft-identity-association.json", (req, res) => {
     res.json({
         associatedApplications: [
             {
